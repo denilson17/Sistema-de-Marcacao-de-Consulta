@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:component>
+        <ui:composition template="template.xhtml">
+            <ui:define name="cabecalho">Sistema de Cadastrar Cliente</ui:define>  
+            <ui:define name="delicinha">
+                <h:form>
+                    <h:panelGrid columns="4" border="0" cellpadding="0" cellspacing="0">
+                    Nome: <h:inputText></h:inputText> 
+                    Telefone: <h:inputText></h:inputText> 
+                    Logradouro: <h:inputText></h:inputText> 
+                    Bairro: <h:inputText></h:inputText> 
+                    Estado: <h:selectOneMenu>
+                        <f:selectItem  itemLabel="Selecione" itemValue="0" />
+                        <f:selectItem  itemLabel="Acre" itemValue="1" />
+                        <f:selectItem  itemLabel="Bahia" itemValue="2" />
+                        <f:selectItem  itemLabel="Espirito Santo" itemValue="3" />
+                    </h:selectOneMenu>  
+                    Email: <h:inputText></h:inputText> 
+                    Plano de Saúde: <h:selectOneMenu>
+                        <f:selectItem  itemLabel="Selecione" itemValue="0" />
+                        <f:selectItem  itemLabel="Hapvida" itemValue="1" />
+                        <f:selectItem  itemLabel="Vitalmed" itemValue="2" />
+                        <f:selectItem  itemLabel="Planserv" itemValue="3" />
+                    </h:selectOneMenu> 
+                    Número: <h:inputText></h:inputText> 
+                    CEP: <h:inputText></h:inputText> 
+                    Cidade: <h:selectOneMenu>
+                        <f:selectItem  itemLabel="Selecione" itemValue="0" />
+                        <f:selectItem  itemLabel="Rio Branco" itemValue="1" />
+                        <f:selectItem  itemLabel="Salvador" itemValue="2" />
+                        <f:selectItem  itemLabel="Vitoria" itemValue="3" />
+                    </h:selectOneMenu> 
+                    <h:commandButton value="Cadastrar"></h:commandButton>
+                    </h:panelGrid>
+                </h:form>
+            </ui:define>
+            
+        </ui:composition>
+    </ui:component>
+</html>
+

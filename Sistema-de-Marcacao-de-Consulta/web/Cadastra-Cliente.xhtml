@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <ui:component>
+        <ui:composition template="template.xhtml">
+            <ui:define name="cabecalho">Sistema de Cadastrar Cliente</ui:define>  
+            <ui:define name="delicinha">
+                <h:form>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h:outputLabel value="Nome:"/> 
+                        <h:inputText class="form-control"></h:inputText>
+                            </div>
+                           
+                        <div class="col-lg-6">
+                            <h:outputLabel value="Endereco:"/>
+                    <h:inputText class="form-control"></h:inputText><br/>
+                        </div>
+                    </div>
+                    Telefone : <h:inputText></h:inputText><br/>
+                    </div>
+                </h:form>
+            </ui:define>
+            
+        </ui:composition>
+    </ui:component>
+</html>
+
